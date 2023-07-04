@@ -7,73 +7,62 @@
 body{
     background-color: white;
 }
-#flex1{
-    flex: 1;
-    padding-left: 20px;  
-
-}
-#span1{
-    border-right: 2px solid lightgray;
-    padding-right: 20px;
-}
-
-
-.navmenu1 ul{
-    display: flex;
-    align-items: center;
-    
-    
-}
-.navmenu1 li{
-    list-style: none;
-
-}
-
-.navmenu{
-    display:flex;
-    justify-content:space-evenly;
-    align-items: flex-start;
-    flex-wrap: nowrap;
-    flex-direction: row;
-    list-style: none;
-    margin: 50px;
-    width: 800px;
-    /* width: fit-content; */
-    float: left;
-    position: relative;
-    color: green;
-}
-.container{
-    display:grid;
-    grid-template-columns: 200px ;
-    grid-template-rows: 200px 200px 200px 300px 300px;
-   
-    flex-direction: column;
-    height: 100%;
-    align-content: center;
-    flex-wrap: wrap;
-    align-items: normal;
+/* styling from section 1 */
+.box{
     width: 100%;
-    height: 100%;
-    display: table;
+    height: 600px;
+    padding: 10px;
+    border: 2px solid black;
     box-sizing: border-box;
+    border-radius: 10px;
+    background-image: url( "https://www.garden.eco/wp-content/uploads/2018/04/corn-leaves.jpg");
+    background-size:cover;
+    background-repeat: no-repeat;
+    justify-content:space-between;
+    justify-items: center;
+    margin-top: 100px;
+    /* margin-left: 20px;   */
+    position: relative;
+}
+
+.feedbackbtn{
+    position: absolute;
+    top: 50%;
+    right: -55px;
+    vertical-align: top;
+    rotate: 90deg;
+    padding: 10px 20px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    font-size: 16px;
+    
+    
+}
+/* section 2 */
+.classone{
+    width: 100%;
+    height: 600px;
+    padding: 10px;
+    border: 2px solid black;
+    box-sizing: border-box;
+    border-radius: 10px;
+    justify-content:space-between;
+    justify-items: center;
+    position: relative;
 
 }
-.orange{
-    background-color:orangered;
-    border: 2px solid orangered;
-   box-sizing: border-box;
-   border-radius: 2px;
-   color: white;
-   font-size: 12px;
-   width: 100px;
-   height: 20px;
-   display:grid;
-    grid-template-columns: 100px;
-    grid-template-rows: 0px;
-    margin-left: 100px;
-    margin-top: 20px;
+.elementtwo{
+    margin-left: 20px;
+    display:grid;
+    grid-template-columns: 1fr 2fr;
+    grid-template-rows: 50px 50px 50px 50px 50px ;
+    flex-direction: column;
+    flex-wrap: wrap;
+    column-gap: 200px ;
 }
+
 .orangetwo{
     background-color:orangered;
     border: 2px solid orangered;
@@ -89,102 +78,22 @@ body{
     margin-left: 50px;
     margin-top: 10px;
 }
-
-
-.h1{
-    color: black;
-}
-.details{
-    display:grid;
-    grid-template-columns: 200px 300px 300px;
-    grid-template-rows: 150px;
-    justify-content:space-evenly;
-    flex-wrap: nowrap;
-    flex-direction: row;
+.feedbackbtn2{
+    position: absolute;
+    top:50%;
+    right: -55px;
+    vertical-align: top;
+    rotate: 90deg;
+    padding: 10px 20px;
+    background-color: #4CAF50;
     color: white;
-    font-size: large;
-    font-weight: bold;
-    align-items: end;
-
+    border: none;
+    border-radius: 4px;
+    font-size: 16px;
 }
-
-.b1{
-    background-color: green;
-    border: 2px solid green;
-   box-sizing: border-box;
-   border-radius: 2px;
-   color: white;
-   font-size: 12px;
-}
-.account{
-    background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRMQePmhaEXIG0ITYmEVl5bI5iM8FGLA3Kuew&usqp=CAU");
-    /* background-size: cover; */
-    background-repeat: no-repeat;
-    padding-top: 50px;
-    height: 100vh;
-    width: 900px;
-    height: 600px;
-    padding: 10px;
-    border: 2px solid black;
-    box-sizing: border-box;
-    border-radius: 10px;
-    background-color: gray;
-    background-size:cover;
-    justify-content:space-between;
-    justify-items: center;
-    margin-top: 100px;
-    margin-left: 20px;
-
-}
-#connect li {
-    list-style-type: none;
-    display: flex;
-}
-#connect{
-    list-style-type: none;
-
-}
-.groupone{
-    display: flex;
-    list-style-type: none;
-}
-.grouptwo{
-    display: flex;
-    list-style-type: none;
-}
-.footer{
-    width: 900px;
-    height: 600px;
-    padding: 10px;
-    border: 2px solid black;
-    box-sizing: border-box;
-    border-radius: 10px;
-    background-color: gray;
-    background-size:cover;
-    justify-content:space-between;
-    justify-items: center;
-    margin-top: 100px;
-    margin-left: 20px;
-
-}
-
-.box{
-    width: 900px;
-    height: 600px;
-    padding: 10px;
-    border: 2px solid black;
-    box-sizing: border-box;
-    border-radius: 10px;
-    background-image: url( "https://www.garden.eco/wp-content/uploads/2018/04/corn-leaves.jpg");
-    background-size:cover;
-    background-repeat: no-repeat;
-    justify-content:space-between;
-    justify-items: center;
-    margin-top: 100px;
-    margin-left: 20px;  
-}
+/* section 3 */
 .boxtwo{
-    width: 900px;
+    width: 100%;
     height: 600px;
     padding: 10px;
     border: 2px solid black;
@@ -194,25 +103,10 @@ body{
     background-size:cover;
     justify-content:space-between;
     justify-items: center;
-    margin-top: 100px;
-    margin-left: 20px;
+    /* margin-top: 100px; */
+    /* margin-left: 20px; */
+    position: relative;
 }
-.boxseven{
-    width: 900px;
-    height: 600px;
-    padding: 10px;
-    border: 2px solid black;
-    box-sizing: border-box;
-    border-radius: 10px;
-    background-color:white;
-    background-size:cover;
-    justify-content:space-between;
-    justify-items: center;
-    margin-top: 100px;
-    margin-left: 20px;
-
-}
-
 #contentone{
     font-size: xx-large;
    text-align: center;
@@ -221,78 +115,15 @@ body{
     font-size: medium;
     text-align: center;
 }
-#contentthree{
-    font-size: xx-large;
-    text-align: center;
-}
-#contentfour{
-    font-size: medium;
-    text-align: center;
-}
-#contentfive{
-    color: green;
-    background-color: white;
-    font-size: medium;
-    border: 2px solid white;
-    box-sizing: border-box;
-    border-radius: 2px;
-    font-size: 12px;
-    width: 100px;
-    height: 20px;
+#grid{
+    margin-left: 20px;
     display:grid;
-    grid-template-columns: 100px;
-    grid-template-rows: 0px;
-    margin-left: 100px;
-    margin-top: 20px;
-
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows:150px ;
+    flex-direction: column;
+    flex-wrap: wrap;
+    column-gap: 10px ;
 }
-#minione{
-    font-size: xx-large;
-   text-align: center;
-}
-#minitwo{
-    font-size: medium;
-    text-align: center;
-}
-.farmerone{
-    width: 200px;
-    height: 200px;
-    /* background-color:green; */
-    padding: 10px;
-    border: 2px solid white;
-    box-sizing: border-box;
-    border-radius: 2px; 
-    justify-content:space-between;
-    margin-top: 90px;
-  
-
-}
-.Farmertwo{
-    width: 200px;
-    height: 200px;
-    /* background-color:green; */
-    padding: 10px;
-    border: 2px solid white;
-    box-sizing: border-box;
-    border-radius: 2px; 
-    justify-content:space-between;
-    margin-top: 90px;
-  
-}
-.farmerthree{
-    width: 200px;
-    height: 200px;
-    /* background-color:green; */
-    padding: 10px;
-    border: 2px solid white;
-    box-sizing: border-box;
-    border-radius: 2px; 
-    justify-content:space-between;
-    margin-top: 90px;
-  
-}
-
-    
 
 .boxthree{
     width: 200px;
@@ -344,45 +175,366 @@ body{
     margin-top: 30px;
     
 }
+.feedbackbtn3{
+    position: absolute;
+    top:50%;
+    right: -55px;
+    vertical-align: top;
+    rotate: 90deg;
+    padding: 10px 20px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    font-size: 16px;
 
-.elementtwo{
-    margin-left: 20px;
-    display:grid;
-    grid-template-columns: 1fr 2fr;
-    grid-template-rows: 50px 50px 50px 50px 50px ;
-    flex-direction: column;
-    flex-wrap: wrap;
-    column-gap: 200px ;
 }
-#grid{
-    margin-left: 20px;
-    display:grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-    grid-template-rows:150px ;
-    flex-direction: column;
-    flex-wrap: wrap;
-    column-gap: 10px ;
+/* section 4 */
+.boxseven{
+    width: 100%;
+    height: 600px;
+    padding: 10px;
+    border: 2px solid black;
+    /* box-sizing: border-box; */
+    border-radius: 10px;
+    /* background-color:white; */
+    /* background-size:cover; */
+    justify-content:space-between;
+    justify-items: center;
+    /* margin-top: 100px;
+    margin-left: 20px; */
+    position: relative;
 
+}
+.feedbackbtn4{
+    position: absolute;
+    top:50%;
+    right: -55px;
+    vertical-align: top;
+    rotate: 90deg;
+    padding: 10px 20px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    font-size: 16px;
+
+}
+#minione{
+    font-size: xx-large;
+   text-align: center;
+}
+#minitwo{
+    font-size: medium;
+    text-align: center;
 }
 #gridtwo{
-    margin-left: 20px;
+    /* margin-left: 20px; */
     display:grid;
     grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows:150px ;
+    /* grid-template-rows:150px ; */
     grid-template-areas:main ;
-    flex-direction: column;
-    flex-wrap: wrap;
+    /* flex-direction: column;
+    flex-wrap: wrap; */
     column-gap: 10px ;
+    background-color: green;
+    padding-bottom: 300px;
+    
 
 }
+.farmerone{
+    width: 200px;
+    height: 200px;
+    /* background-color:green; */
+    /* padding: 10px;
+    border: 2px solid white; */
+    /* box-sizing: border-box; */
+    /* border-radius: 2px; 
+    justify-content:space-between;
+    margin-top: 90px; */
+    padding-top: 100px;
+}
+.Farmertwo{
+    width: 200px;
+    height: 200px;
+    /* background-color:green; */
+    padding: 10px;
+    border: 2px solid white;
+    /* box-sizing: border-box; */
+    border-radius: 2px; 
+    justify-content:space-between;
+    margin-top: 90px;
+  
+}
+.farmerthree{
+    width: 200px;
+    height: 200px;
+    /* background-color:green; */
+    padding: 10px;
+    border: 2px solid white;
+    /* box-sizing: border-box; */
+    border-radius: 2px; 
+    justify-content:space-between;
+    margin-top: 90px;
+  
+}
+
+/* section5 */
+.account{
+    background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRMQePmhaEXIG0ITYmEVl5bI5iM8FGLA3Kuew&usqp=CAU");
+    /* background-size: cover; */
+    background-repeat: no-repeat;
+    padding-top: 50px;
+    height: 100vh;
+    width:100;
+    height: 600px;
+    padding: 10px;
+    border: 2px solid black;
+    box-sizing: border-box;
+    border-radius: 10px;
+    background-color: gray;
+    background-size:cover;
+    justify-content:space-between;
+    justify-items: center;
+    /* margin-top: 100px;
+    margin-left: 20px; */
+    position: relative;
+
+}
+.feedbackbtn5{
+    position: absolute;
+    top:50%;
+    right: -55px;
+    vertical-align: top;
+    rotate: 90deg;
+    padding: 10px 20px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    font-size: 16px;
+}
+#contentthree{
+    font-size: xx-large;
+    text-align: center;
+}
+#contentfour{
+    font-size: medium;
+    text-align: center;
+}
+#contentfive{
+    color: green;
+    background-color: white;
+    font-size: medium;
+    border: 2px solid white;
+    box-sizing: border-box;
+    border-radius: 2px;
+    font-size: 12px;
+    width: 100px;
+    height: 20px;
+    display:grid;
+    grid-template-columns: 100px;
+    grid-template-rows: 0px;
+    margin-left: 100px;
+    margin-top: 20px;
+
+}
+
+/* section 6 */
+.footer{
+    width:100%;
+    height: 600px;
+    padding: 10px;
+    border: 2px solid black;
+    box-sizing: border-box;
+    border-radius: 10px;
+    background-color: gray;
+    background-size:cover;
+    justify-content:space-between;
+    justify-items: center;
+    /* margin-top: 100px;
+    margin-left: 20px; */
+    position: relative;
+
+}
+
+.feedbackbtn6{
+    position: absolute;
+    top:50%;
+    right: -55px;
+    vertical-align: top;
+    rotate: 90deg;
+    padding: 10px 20px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    font-size: 16px;
+
+}
+.first{
+    list-style: none;
+}
+.second{
+    list-style: none;
+}
+.third{
+    list-style: none;
+}
+.boxeight{
+    display: flex;
+}
+#connect{
+    list-style-type: none;
+
+}
+.groupone{
+    display: flex;
+    list-style: none;
+}
+.grouptwo{
+    display: flex;
+    list-style: none;
+}
+.boxnine{
+    display: flex;
+}
+
+
+
+
+
+#flex1{
+    flex: 1;
+    padding-left: 20px;  
+
+}
+#span1{
+    border-right: 2px solid lightgray;
+    padding-right: 20px;
+}
+
+
+.navmenu1 ul{
+    display: flex;
+    align-items: center;
+    
+    
+}
+.navmenu1 li{
+    list-style: none;
+
+}
+
+.navmenu{
+    display:flex;
+    justify-content:space-evenly;
+    align-items: flex-start;
+    flex-wrap: nowrap;
+    flex-direction: row;
+    list-style: none;
+    margin: 50px;
+    width: 800px;
+    /* width: fit-content; */
+    float: left;
+    position: relative;
+    color: green;
+    
+}
+.container{
+    display:grid;
+    grid-template-columns: 200px ;
+    grid-template-rows: 200px 200px 200px 300px 300px;
+   
+    flex-direction: column;
+    height: 100%;
+    align-content: center;
+    flex-wrap: wrap;
+    align-items: normal;
+    width: 100%;
+    height: 100%;
+    display: table;
+    box-sizing: border-box;
+
+}
+.orange{
+    background-color:orangered;
+    border: 2px solid orangered;
+   box-sizing: border-box;
+   border-radius: 2px;
+   color: white;
+   font-size: 12px;
+   width: 100px;
+   height: 20px;
+   display:grid;
+    grid-template-columns: 100px;
+    grid-template-rows: 0px;
+    margin-left: 100px;
+    margin-top: 20px;
+}
+
+
+
+.h1{
+    color: black;
+}
+.details{
+    display:grid;
+    grid-template-columns: 200px 300px 300px;
+    grid-template-rows: 150px;
+    justify-content:space-evenly;
+    flex-wrap: nowrap;
+    flex-direction: row;
+    color: white;
+    font-size: large;
+    font-weight: bold;
+    align-items: end;
+
+}
+
+
+.b1{
+    background-color: green;
+    border: 2px solid green;
+   box-sizing: border-box;
+   border-radius: 2px;
+   color: white;
+   font-size: 12px;
+}
+
+
+#connect li {
+    list-style-type: none;
+    display: flex;
+}
+
+
+
+.fourth{
+    grid-row: ifr;
+    list-style: none;
+
+}
+
+
+
+
+
+
+
+
+
+
+
+    
+
+
+
+
+
 #main{
     grid-area: main;
     background-color: green;
 
 }
-.boxeight{
-    display: flex;
-}
-.boxnine{
-    display: flex;
-}
+
