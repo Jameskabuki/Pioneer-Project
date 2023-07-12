@@ -7,14 +7,38 @@
 body{
     background-color: white;
 }
-/* styling from section 1 */
+/* styling from header section */
+.navmenu1 li{
+    list-style: none;
+}
+#flex1{
+    flex: 1;
+    padding-left: 20px;  
+}
+.navmenu{
+    display:flex;
+    justify-content:space-evenly;
+    align-items: flex-start;
+    flex-wrap: nowrap;
+    flex-direction: row;
+    list-style: none;
+    margin: 50px;
+    width: 800px;
+    /* width: fit-content; */
+    float: left;
+    position: relative;
+    color: green;   
+}
+
+
+/* section 1 */
 .box{
     width: 100%;
     height: 600px;
     padding: 10px;
-    border: 2px solid black;
+    /* border: 2px solid black; */
     box-sizing: border-box;
-    border-radius: 10px;
+    /* border-radius: 10px; */
     background-image: url( "https://www.garden.eco/wp-content/uploads/2018/04/corn-leaves.jpg");
     background-size:cover;
     background-repeat: no-repeat;
@@ -27,7 +51,7 @@ body{
 
 .feedbackbtn{
     position: absolute;
-    top: 50%;
+    top:50%;
     right: -55px;
     vertical-align: top;
     rotate: 90deg;
@@ -40,14 +64,62 @@ body{
     
     
 }
+.container{
+    display:grid;
+    grid-template-columns: 200px ;
+    grid-template-rows: 200px 200px 200px 300px 300px;
+   
+    flex-direction: column;
+    height: 100%;
+    align-content: center;
+    flex-wrap:nowrap;
+    align-items: normal;
+    width: 100%;
+    height: 100%;
+    display: table;
+    box-sizing: border-box;
+
+}
+.orange{
+    background-color:orangered;
+    border: 2px solid orangered;
+   box-sizing: border-box;
+   border-radius: 2px;
+   color: white;
+   font-size: 12px;
+   width: 100px;
+   height: 20px;
+   display:grid;
+    grid-template-columns: 100px;
+    grid-template-rows: 0px;
+    margin-left: 100px;
+    margin-top: 20px;
+}
+.details{
+    display:grid;
+    grid-template-columns: 200px 300px 300px;
+    grid-template-rows: 150px;
+    justify-content:space-evenly;
+    flex-wrap: nowrap;
+    flex-direction: row;
+    color: white;
+    font-size: large;
+    font-weight: bold;
+    align-items: end;
+
+}
+
+
 /* section 2 */
+
+
 .classone{
     width: 100%;
     height: 600px;
     padding: 10px;
-    border: 2px solid black;
+    /* border: 2px solid black; */
     box-sizing: border-box;
-    border-radius: 10px;
+    /* border-radius: 10px; */
     justify-content:space-between;
     justify-items: center;
     position: relative;
@@ -71,12 +143,12 @@ body{
    color: white;
    font-size: 12px;
    width: 100px;
-   height: 20px;
+   height: 40px;
    /* display:grid;
     grid-template-columns: 100px;
     grid-template-rows: 0px; */
     margin-left: 50px;
-    margin-top: 10px;
+    margin-top: 5px;
 }
 .feedbackbtn2{
     position: absolute;
@@ -91,20 +163,22 @@ body{
     border-radius: 4px;
     font-size: 16px;
 }
+
+
 /* section 3 */
+
+
 .boxtwo{
     width: 100%;
     height: 600px;
     padding: 10px;
-    border: 2px solid black;
+    /* border: 2px solid black; */
     box-sizing: border-box;
-    border-radius: 10px;
-    background-color: gray;
+    /* border-radius: 10px; */
+    background-color:lightgrey;
     background-size:cover;
     justify-content:space-between;
     justify-items: center;
-    /* margin-top: 100px; */
-    /* margin-left: 20px; */
     position: relative;
 }
 #contentone{
@@ -115,65 +189,37 @@ body{
     font-size: medium;
     text-align: center;
 }
-#grid{
-    margin-left: 20px;
-    display:grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-    grid-template-rows:150px ;
-    flex-direction: column;
-    flex-wrap: wrap;
-    column-gap: 10px ;
+.container{
+    display: flex;
+    justify-content: center;
+    
 }
-
-.boxthree{
-    width: 200px;
-    height: 200px;
-    background-color: white;
-    padding: 10px;
-    border: 2px solid gray;
-    box-sizing: border-box;
-    border-radius: 2px; 
-    justify-content:space-between;
-    margin-top: 40px;
+.card{
+    background: white;
+    height: 300px;
+    width: 220px;
+    margin: 10px;
+    margin-bottom: 250px;
   
 }
-.boxfour{
-    width: 200px;
+.card-image{
+    background-color: aqua;
     height: 200px;
-    background-color:gray;
-    padding: 10px;
-    border: 2px solid gray;
-    box-sizing: border-box;
-    border-radius: 2px; 
-    justify-content:space-between;
-    margin-top: 30px;
-   
+    margin-bottom: 15px;   
 }
+.h2{
+    color: green;
+    padding: 15px 20px ;
+}
+.text{
+    color: black;
+    padding: 15px 20px;
+}
+.h5{
+    color: green;
+    padding: 15px 20px;
+    padding-bottom: 230px;
 
-.boxfive{
-    width: 200px;
-    height: 200px;
-    padding: 10px;
-    background-color: white;
-    border: 2px solid gray
-    box-sizing: border-box;
-    border-radius: 10px;
-    justify-content:space-between;
-    justify-items: center;
-    margin-top: 40px;
-     
-}
-.boxsix{
-    width: 200px;
-    height: 200px;
-    background-color: gray;
-    padding: 10px;
-    border: 2px solid gray;
-    box-sizing: border-box;
-    border-radius: 2px; 
-    justify-content:space-between;
-    margin-top: 30px;
-    
 }
 .feedbackbtn3{
     position: absolute;
@@ -189,20 +235,25 @@ body{
     font-size: 16px;
 
 }
+
+
 /* section 4 */
+
+
+
 .boxseven{
     width: 100%;
     height: 600px;
     padding: 10px;
-    border: 2px solid black;
-    /* box-sizing: border-box; */
-    border-radius: 10px;
+     /* border: 2px solid black;  */
+     box-sizing: border-box; 
+     /* border-radius: 10px;  */
     /* background-color:white; */
-    /* background-size:cover; */
+    background-size:cover; 
     justify-content:space-between;
     justify-items: center;
-    /* margin-top: 100px;
-    margin-left: 20px; */
+    margin-top: 100px;
+    /* margin-left: 20px; */ */
     position: relative;
 
 }
@@ -228,58 +279,44 @@ body{
     font-size: medium;
     text-align: center;
 }
-#gridtwo{
-    /* margin-left: 20px; */
-    display:grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    /* grid-template-rows:150px ; */
-    grid-template-areas:main ;
-    /* flex-direction: column;
-    flex-wrap: wrap; */
-    column-gap: 10px ;
-    background-color: green;
-    padding-bottom: 300px;
+.container4{
+    display: flex;
+    justify-content: center;
     
+}
+.card2{
+    background: white;
+    height: 400px;
+    width: 280px;
+    margin: 10px;
+    margin-bottom: 250px;
+    
+}
+.card-image{
+    background-color:white;
+    height: 200px;
+    margin-bottom: 15px;   
+}
+.Title2{
+    color: black;
+    padding: 15px 20px ;
+    
+}
+.text2{
+    color: black;
+    padding: 15px 20px;
+}
+.extension{
+    color: green;
+    padding: 15px 20px;
+    padding-bottom: 230px;
 
 }
-.farmerone{
-    width: 200px;
-    height: 200px;
-    /* background-color:green; */
-    /* padding: 10px;
-    border: 2px solid white; */
-    /* box-sizing: border-box; */
-    /* border-radius: 2px; 
-    justify-content:space-between;
-    margin-top: 90px; */
-    padding-top: 100px;
-}
-.Farmertwo{
-    width: 200px;
-    height: 200px;
-    /* background-color:green; */
-    padding: 10px;
-    border: 2px solid white;
-    /* box-sizing: border-box; */
-    border-radius: 2px; 
-    justify-content:space-between;
-    margin-top: 90px;
-  
-}
-.farmerthree{
-    width: 200px;
-    height: 200px;
-    /* background-color:green; */
-    padding: 10px;
-    border: 2px solid white;
-    /* box-sizing: border-box; */
-    border-radius: 2px; 
-    justify-content:space-between;
-    margin-top: 90px;
-  
-}
+
 
 /* section5 */
+
+
 .account{
     background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRMQePmhaEXIG0ITYmEVl5bI5iM8FGLA3Kuew&usqp=CAU");
     /* background-size: cover; */
@@ -289,15 +326,15 @@ body{
     width:100;
     height: 600px;
     padding: 10px;
-    border: 2px solid black;
+    /* border: 2px solid black; */
     box-sizing: border-box;
-    border-radius: 10px;
-    background-color: gray;
+    /* border-radius: 10px; */
+    background-color: darkgreen;
     background-size:cover;
     justify-content:space-between;
     justify-items: center;
-    /* margin-top: 100px;
-    margin-left: 20px; */
+     margin-top: 100px;
+    /* margin-left: 20px; */ */
     position: relative;
 
 }
@@ -317,10 +354,14 @@ body{
 #contentthree{
     font-size: xx-large;
     text-align: center;
+    padding-top: 100px;
+    color: white;
 }
 #contentfour{
-    font-size: medium;
+    font-size: 30px;
     text-align: center;
+    padding-top: 140px;
+    color: white;
 }
 #contentfive{
     color: green;
@@ -328,27 +369,31 @@ body{
     font-size: medium;
     border: 2px solid white;
     box-sizing: border-box;
-    border-radius: 2px;
-    font-size: 12px;
-    width: 100px;
-    height: 20px;
+    /* border-radius: 2px; */
+    font-size: 20px;
+    width: 150px;
+    height: 40px;
     display:grid;
-    grid-template-columns: 100px;
-    grid-template-rows: 0px;
-    margin-left: 100px;
+    /* grid-template-columns: 100px; */
+    /* grid-template-rows: 0px; */
+    margin-left: 580px;
     margin-top: 20px;
 
 }
 
+
+
 /* section 6 */
+
+
 .footer{
     width:100%;
     height: 600px;
     padding: 10px;
-    border: 2px solid black;
+    /* border: 2px solid black; */
     box-sizing: border-box;
-    border-radius: 10px;
-    background-color: gray;
+    /* border-radius: 10px; */
+    background-color: rgba(85,85,85);
     background-size:cover;
     justify-content:space-between;
     justify-items: center;
@@ -374,12 +419,28 @@ body{
 }
 .first{
     list-style: none;
+    color: white;
+    margin: 30px;
+    /* padding-bottom: 20px; */
 }
 .second{
     list-style: none;
+    color: white;
+    margin: 30px;
 }
 .third{
     list-style: none;
+    color: white;
+    margin: 30px;
+}
+.icons{
+    display: flex;
+    margin: 10px;
+    
+}
+#connect li {
+    list-style-type: none;
+    display: flex;
 }
 .boxeight{
     display: flex;
@@ -389,110 +450,48 @@ body{
 
 }
 .groupone{
-    display: flex;
+    
     list-style: none;
+    color: white;
+    margin-left: 30px;
+
 }
 .grouptwo{
-    display: flex;
+    
     list-style: none;
+    color: white;
+    margin: 30px;
 }
 .boxnine{
     display: flex;
-}
-
-
-
-
-
-#flex1{
-    flex: 1;
-    padding-left: 20px;  
+    background-color: rgba(85,85,85);
+    width:100%;
+    height: 200px;
+    padding: 10px;
+    /* border: 2px solid black; */
+    box-sizing: border-box;
+    /* border-radius: 10px; */
+    background-color: rgba(85,85,85);
+    background-size:cover;
+    justify-content:space-between;
+    justify-items: center;
+    /* margin-top: 100px;
+    margin-left: 20px; */
+    position: relative;
 
 }
 #span1{
     border-right: 2px solid lightgray;
     padding-right: 20px;
 }
-
-
 .navmenu1 ul{
     display: flex;
-    align-items: center;
-    
-    
-}
-.navmenu1 li{
-    list-style: none;
-
-}
-
-.navmenu{
-    display:flex;
-    justify-content:space-evenly;
-    align-items: flex-start;
-    flex-wrap: nowrap;
-    flex-direction: row;
-    list-style: none;
-    margin: 50px;
-    width: 800px;
-    /* width: fit-content; */
-    float: left;
-    position: relative;
-    color: green;
+    align-items: center   
     
 }
-.container{
-    display:grid;
-    grid-template-columns: 200px ;
-    grid-template-rows: 200px 200px 200px 300px 300px;
-   
-    flex-direction: column;
-    height: 100%;
-    align-content: center;
-    flex-wrap: wrap;
-    align-items: normal;
-    width: 100%;
-    height: 100%;
-    display: table;
-    box-sizing: border-box;
-
-}
-.orange{
-    background-color:orangered;
-    border: 2px solid orangered;
-   box-sizing: border-box;
-   border-radius: 2px;
-   color: white;
-   font-size: 12px;
-   width: 100px;
-   height: 20px;
-   display:grid;
-    grid-template-columns: 100px;
-    grid-template-rows: 0px;
-    margin-left: 100px;
-    margin-top: 20px;
-}
-
-
-
 .h1{
     color: black;
 }
-.details{
-    display:grid;
-    grid-template-columns: 200px 300px 300px;
-    grid-template-rows: 150px;
-    justify-content:space-evenly;
-    flex-wrap: nowrap;
-    flex-direction: row;
-    color: white;
-    font-size: large;
-    font-weight: bold;
-    align-items: end;
-
-}
-
-
 .b1{
     background-color: green;
     border: 2px solid green;
@@ -503,38 +502,6 @@ body{
 }
 
 
-#connect li {
-    list-style-type: none;
-    display: flex;
-}
 
 
-
-.fourth{
-    grid-row: ifr;
-    list-style: none;
-
-}
-
-
-
-
-
-
-
-
-
-
-
-    
-
-
-
-
-
-#main{
-    grid-area: main;
-    background-color: green;
-
-}
 
